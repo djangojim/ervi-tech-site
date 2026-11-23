@@ -7,26 +7,26 @@
 
 :root {
   /* colours (site/V7) */
-  --bg: #0a0a0a;
-  --surface: #111111;
-  --text: #f0f0f0;
-  --text-2: rgba(255, 255, 255, 0.7);
-  --text-3: rgba(255, 255, 255, 0.56);
-  --line: rgba(255, 255, 255, 0.1);
-  --line-strong: rgba(255, 255, 255, 0.18);
-  --chip: rgba(255, 255, 255, 0.08);
-  --veil: rgba(10, 10, 10, 0.72);
+  --bg: #ffffff;
+  --surface: #f6f7f9;
+  --text: #0b0d12;
+  --text-2: rgba(11, 13, 18, 0.74);
+  --text-3: rgba(11, 13, 18, 0.64);
+  --line: rgba(11, 13, 18, 0.1);
+  --line-strong: rgba(11, 13, 18, 0.2);
+  --chip: rgba(11, 13, 18, 0.05);
+  --veil: rgba(255, 255, 255, 0.82);
   /* the one accent, one job: it marks the private service notice */
-  --accent: #0099ff;
+  --accent: #0b63ce;
   /* the one card shadow */
-  --shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05), 0 24px 48px -24px rgba(0, 0, 0, 0.8);
+  --shadow: 0 1px 2px rgba(11, 13, 18, 0.05), 0 18px 36px -24px rgba(11, 13, 18, 0.22);
   /* 8px spacing scale */
   --s1: 8px; --s2: 16px; --s3: 24px; --s4: 32px; --s5: 40px; --s6: 48px; --s8: 64px; --s10: 80px; --s12: 96px; --s16: 128px;
   --max: 1120px;
   --gutter: 24px;
   --sans: "Inter", "Inter Placeholder", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   --serif: "Instrument Serif", "Times New Roman", Georgia, serif;
-  color-scheme: dark;
+  color-scheme: light;
 }
 
 @font-face { font-family: "Inter Placeholder"; src: local("Arial"); ascent-override: 89.79%; descent-override: 22.36%; line-gap-override: 0%; size-adjust: 107.89%; }
@@ -69,7 +69,7 @@ a { color: inherit; }
 @media (max-width: 719px) { .nav .nav-wide { display: none; } .nav a { padding: 0 var(--s1); } }
 
 /* hero */
-.hero { position: relative; overflow: hidden; padding: var(--s16) 0 var(--s12); text-align: center; background: radial-gradient(60% 70% at 50% 0%, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0) 70%); }
+.hero { position: relative; overflow: hidden; padding: var(--s16) 0 var(--s12); text-align: center; background: radial-gradient(60% 70% at 50% 0%, rgba(11, 99, 206, 0.07), rgba(11, 99, 206, 0) 70%); }
 .hero .wrap { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; }
 .chip { display: inline-flex; align-items: center; gap: 10px; padding: 8px 16px; border-radius: 50px; background: var(--chip); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); font-size: 14px; font-weight: 500; letter-spacing: -0.03em; line-height: 1.2; color: var(--text); }
 .chip::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--text); opacity: 0.8; }
@@ -84,9 +84,9 @@ a { color: inherit; }
 /* buttons (V7: light fill, dark text, small radius) */
 .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 var(--s3); border-radius: 4px; font-size: 15px; font-weight: 500; letter-spacing: -0.03em; line-height: 1; text-decoration: none; white-space: nowrap; transition: background-color 0.15s ease, box-shadow 0.15s ease; }
 .btn-primary { background: var(--text); color: var(--bg); }
-.btn-primary:hover { background: #ffffff; }
-.btn-ghost { background: rgba(10, 10, 10, 0.56); color: var(--text); box-shadow: inset 0 0 0 1px var(--line-strong); }
-.btn-ghost:hover { box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.4); }
+.btn-primary:hover { background: #000000; }
+.btn-ghost { background: rgba(255, 255, 255, 0.7); color: var(--text); box-shadow: inset 0 0 0 1px var(--line-strong); }
+.btn-ghost:hover { box-shadow: inset 0 0 0 1px rgba(11, 13, 18, 0.45); }
 
 /* private service notice */
 .notice-band { padding: 0 0 var(--s12); }
@@ -144,7 +144,7 @@ thead th { font-size: 13px; font-weight: 500; color: var(--text-3); letter-spaci
 th:last-child, td:last-child { text-align: right; }
 tbody th { font-weight: 400; color: var(--text); }
 tbody td { font-weight: 500; }
-tbody tr:hover { background: rgba(255, 255, 255, 0.02); }
+tbody tr:hover { background: rgba(11, 13, 18, 0.025); }
 .table-note { margin-top: var(--s2); color: var(--text-2); font-size: 15px; }
 @media (max-width: 599px) { caption, th, td { padding-left: var(--s3); padding-right: var(--s3); } }
 
